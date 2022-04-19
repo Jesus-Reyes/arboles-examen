@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
     });
     // Arbol 2
     print("Numeros Arbol 2 ");
-    three1.forEach((n) {
+    three2.forEach((n) {
       print(n);
     });
 
@@ -43,11 +43,11 @@ class _HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
                 width: 320,
                 child: Column(
-                  // mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 50),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -92,6 +92,7 @@ class _HomePageState extends State<HomePage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: const [Text("Arbol2")],
                   ),
+                  const SizedBox(height: 10),
                   Row(children: [CirclesContainer(num: three2[0])]),
                   const SizedBox(height: 10),
                   Row(

@@ -6,14 +6,17 @@ class CirclesContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 20.0,
-      height: 20.0,
+      width: 30.0,
+      height: 30.0,
       decoration: const BoxDecoration(
         color: Colors.orange,
         shape: BoxShape.circle,
       ),
       child: Center(
-        child: Text("$num"),
+        child: Text(
+          "$num",
+          style: const TextStyle(fontSize: 15),
+        ),
       ),
     );
   }
